@@ -4,7 +4,7 @@ $(document).ready(function() {
     });
 
     $('#decode').on('click', function(){
-       $('#result').text(decode($('#word').val()));
+       $('#result').val(decode($('#word').val()));
     });
 
     $('#clear').on('click', clear);
@@ -25,5 +25,5 @@ function decode(str){
 
 function clear(){
   $('#word').val('');
-  $('#result').text('');
+  $('#result').val('');
 }

@@ -13,17 +13,17 @@
 </head>
 
 <body>
-  <section>
+  <section id="decoder">
     <div class="container">
       <div class="jumbotron">
         <div class="row">
           <h3 class="col-sm-12 text-center">
-            This is a base64 encoder/decoder tool.
+            This is a base64 encoder/decoder tool. Hola Gaby
           </h1>
         </div>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <input id="word" type="text" name="word" value="" required>
+            <textarea id="word" type="text" name="word" value="" rows="10" required></textarea>
           </div>
         </div>
         <div class="row">
@@ -35,7 +35,35 @@
         </div>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <textarea id="result" type="text" name="result" value=""></textarea>
+            <textarea id="result" type="text" name="result" value="" rows="10" readonly></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="passwordGenerator">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <h3 class="col-sm-12 text-center">
+            This is a base64 encoder/decoder tool. Hola Gaby
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <textarea id="word" type="text" name="word" value="" rows="10" required></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center form-group">
+            <button type="button" id="encode" class="btn btn-success">Encode</button>
+            <button type="button" id="decode" class="btn btn-success">Decode</button>
+            <button type="button" id="clear" class="btn btn-default">Clear</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <textarea id="result" type="text" name="result" value="" rows="10" readonly></textarea>
           </div>
         </div>
       </div>
@@ -45,6 +73,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="base64Decoder.js" ></script>
+  <script src="passwordGenerator.js" ></script>
 </body>
 
 </html>
