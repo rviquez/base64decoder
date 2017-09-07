@@ -1,0 +1,13 @@
+{
+  "name": "encodechanger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {},
+  "author": "Roberto Viquez",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "iconv-lite": "^0.4.18"
+  }
+}

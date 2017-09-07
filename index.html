@@ -46,26 +46,30 @@
       <div class="jumbotron">
         <div class="row">
           <h3 class="col-sm-12 text-center">
-            This is a base64 encoder/decoder tool. Hola Gaby
+            This is a password generator tool.
           </h1>
         </div>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <textarea id="word" type="text" name="word" value="" rows="10" required></textarea>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 text-center form-group">
-            <button type="button" id="encode" class="btn btn-success">Encode</button>
-            <button type="button" id="decode" class="btn btn-success">Decode</button>
-            <button type="button" id="clear" class="btn btn-default">Clear</button>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <textarea id="result" type="text" name="result" value="" rows="10" readonly></textarea>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
           </div>
-        </div>
+          <div class="form-group">
+            <label class="checkbox">
+              Check me out<input type="checkbox">
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
       </div>
     </div>
   </section>
