@@ -11,7 +11,14 @@ function init(dir) {
       files.map(function(fileName) {
         let file = path.join(dir, fileName);
         let stats = fs.statSync(file);
-        console.log(stats);
+
+        if (stats.isFile() && path.extname(fileName) === '.cs') {
+          console.log(`Converting ${fileName}`);
+
+        }else{
+
+        }
+
       });
     });
     console.log('Converting files...');
